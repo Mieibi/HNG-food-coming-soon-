@@ -1,49 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CHARR'D & CHOPP'D</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="DesignAssets/rel-icon.png" image="/x-icon" />
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Oswald:wght@300&family=Oxygen:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Oswald:wght@300&family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
 
+  <body>
     <!-- Header -->
     <div class="header">
-        <div class="logo">
-          <img src="Design Assets/logo.png" alt="logo" />
+
+      <!-- LOGO -->
+      <div class="logo">
+        <img class="logo-img" src="DesignAssets/new logo desktop.svg" alt="logo" />
+      </div>
+
+      <!-- Nav Bar -->
+      <div class="nav-bar">
+
+        <!-- HOME ICON FOR MOBILE VIEW-->
+        <a href="#" class="home">
+          <img src="DesignAssets/Vector (1).svg" alt="home" />
+        </a>
+        <!-- INITIAL HOME FOR DESKTOP VIEW -->
+        <a href="#">
+          <p class="nav-content active">home</p>
+        </a>
+
+        <!-- TOGGLE ICON-->
+        <div class="toggle">
+          <img
+            src="DesignAssets/coming soon (1)/Rectangle 250.svg"
+            alt="top"
+            class="top"
+          />
+          <img
+            src="DesignAssets/coming soon (1)/Rectangle 251.svg"
+            alt="bottom"
+            class="bottom"
+          />
         </div>
 
-        <!-- Nav Bar -->
-        <div class="nav-bar">
-            <a href="#">
-                <p class="nav-content">home</p>
-            </a>
-            <a href="#">
-                <p class="nav-content">menu</p>
-            </a>
-            <a href="#">
-                <p class="nav-content">reservations</p>
-            </a>
-            <a href="#">
-                <p class="nav-content">news</p>
-            </a>
-            <a href="#">
-                <p class="nav-content">contact</p>
-            </a>
-        </div>
+        <!-- TOGGLE NAV CONTENT -->
+        <nav class="toggle-nav">
+          <ul class="navigation">
+            <li class="nav-content">
+              <a href="#"> menu </a>
+            </li>
+            <li class="nav-content">
+              <a href="#">
+                reservations
+              </a>
+            </li>
+            <li class="nav-content">
+              <a href="#">
+                news
+              </a>
+            </li>
+            <li class="nav-content">
+              <a href="#">
+                contact
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h3 class="announ">
+        We're preparing something <strong>special</strong> for you!
+      </h3>
+      <h1 class="head-content">COMING SOON</h1>
+
+      <!-- TIMER -->
+      <div class="time">
+        <div class="timer">
+          <div class="days-num">
+            <h2 class="days-count">00</h2>
+          </div>
+          <div class="days">
+            <h3 class="days-l">Days</h3>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="hours-num">
+            <h2 class="hours-count">24</h2>
+          </div>
+          <div class="hours">
+            <h3 class="hours-l">hrs</h3>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="mins-num">
+            <h2 class="mins-count">00</h2>
+          </div>
+          <div class="mins">
+            <h3 class="mins-l">mins</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBCRIBE -->
+      <p class="subcribe">
+        Subscribe and find out when we launch.
+      </p>
+
+      <!-- FORM -->
+      <form>
+        <input class="input-field" type="text" placeholder="EMAIL ADDRESS" />
+        <button class="btn" type="submit">Notify me</button>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <img src="/DesignAssets/food-image-desktop.svg" alt="nil" class="bkg" />
+
+      <!-- FOOTER CONTENT -->
+      <div class="footer-content">
+
+        <!-- COPYRIGHT -->
+        <p class="copyright">Charr’d & Chopp’d. 2020 . All RIghts Reserved</p>
+
+        <!-- PAGELINKS -->
+        <div class="footer-link">
+          <a class="review" href="#">
+            Reviews
+          </a>
+          <a class="contact" href="#">
+            Contact Us
+          </a>
+          <a class="FAQ" ref="#">
+            FAQ
+          </a>
+          <a class="privacy" href="#">
+            Privacy Policy
+          </a>
+          <a class="TC" href="#">
+            T & C
+          </a>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="social">
+
+          <!-- FACEBOOK ICON -->
+          <picture>
+            <source
+              media="(min-width:809px )"
+              srcset="DesignAssets/Vector.svg"
+            />
+            <img
+              src="DesignAssets/facebook mobile.svg"
+              alt="facebook"
+              class="facebook"
+            />
+          </picture>
+
+          <!-- INSTAGRAM ICON -->
+          <picture>
+            <source
+              media="(min-width: 809px)"
+              srcset="DesignAssets/Instagram.svg"
+            />
+            <img src="DesignAssets/instagram mobile.svg" alt="insta" class="insta" />
+          </picture>
+
+          <!-- TWITTER ICON -->
+          <picture>
+            <source
+              media="(min-width:809px)"
+              srcset="DesignAssets/twitter.svg"
+            />
+            <img src="DesignAssets/twitter mobile.svg" alt="twitter" class="twit" />
+          </picture>
+
+          <!-- LINKEDIN ICON -->
+          <picture>
+            <source
+              media="(min-width:809px)"
+              srcset="DesignAssets/LinkedIN/LinkedIN.svg"
+            />
+            <img
+              src="DesignAssets/LinkedIN mobile.svg"
+              alt="linkedin"
+              class="linkedin"
+            />
+          </picture>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
