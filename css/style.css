@@ -5,7 +5,9 @@
 body,p,h1,h2,h3,ul,li{
     margin: 0;
     padding: 0;
-    
+}
+.main{
+   height: 100vh !important;
 }
 a{
     color: inherit;
@@ -38,6 +40,7 @@ ul{
     text-align: center;
     color: white;
     font-family: 'Oxygen', sans-serif;
+    height: 80vh !important;
 }
 /****/
 .announ{
@@ -321,5 +324,12 @@ footer{
     }
     .facebook,.insta,.twit{
         margin-right: 8px;
+    }
+}
+
+/* Responsiveness for larger heights */
+@media screen and (min-height: 1030px){
+    .content{
+        padding-top: 20vh;
     }
 }
